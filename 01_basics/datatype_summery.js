@@ -1,5 +1,7 @@
 // premitive data type
 
+const { useInsertionEffect } = require("react");
+
 // 7 types: String, Number, Boolean, null, undefined, Symbol, BigInt
 
 const score = 100
@@ -33,3 +35,30 @@ const myFunction = function(){
 }
 
 console.log(typeof myFunction);
+
+
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+        // Memories
+// Stack (Premitive), Heap(Non_primitive)
+
+let myYoutubename = "AmeerMavia"
+
+let anothername = myYoutubename
+anothername = "Abgeen Ameer"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    email:"user@google.com",
+    upi:"user@ybl",
+}
+let userTwo =userOne;
+
+userTwo.email = "mavia@google.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
